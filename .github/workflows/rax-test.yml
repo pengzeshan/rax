@@ -13,5 +13,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
     - name: make
-      run: make rax-test
+      run: make
+
+    - name: rax-test
+      run: |
+        export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:./"
+        make rax-test
+        ./rax-test
+
+    - name: rax-oom-test
+      run: |
+        make rax-oom-test
+        ./rax-oom-test
