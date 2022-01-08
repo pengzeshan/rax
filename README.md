@@ -1,5 +1,13 @@
 # Rax, an ANSI C radix tree implementation
 
+## Notes about this fork
+
+This fork merges the rax source from redis and pending pull requests from the upstream repository.
+
+I will review and accept pull requests to enhance this library and add new features.
+
+## What is Rax?
+
 Rax is a radix tree implementation initially written to be used in a specific
 place of Redis in order to solve a performance problem, but immediately
 converted into a stand alone project to make it reusable for Redis itself, outside the initial intended application, and for other projects as well.
