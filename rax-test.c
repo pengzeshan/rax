@@ -906,13 +906,11 @@ void heapsize(void) {
     size_t sizes_null[14] = {32,56,120,176,216,256,296,360,408,456,504,568,568,568};
     size_t sizes_ptr[14] = {32,64,136,200,248,296,344,416,472,528,584,656,664,672};
     char *toadd[] = {"alligator","alien","baloon","chromodynamic","romane","romanus","romulus","rubens","ruber","rubicon","rubicundus","all","rub","ba",NULL};
-    size_t charlens[14] = {0};
 
     long items = 0;
     size_t charlen = 0;
     while (toadd[items] != NULL) {
         charlen += strlen(toadd[items]);
-        charlens[items] = charlen;
         items++;
     }
 
