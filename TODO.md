@@ -7,7 +7,7 @@ ASAP
 * Avoid fixing the parent link if the node is the same, if this makes a speed difference because of the avoided cache miss.
 * Check if reclaiming nodes from first to last child is a performance improvement in `radtreeFree()`.
 * Explicit unit test with `NULL` values.
-* Explocit unit test with empty string.
+* Explicit unit test with empty string.
 * Turn repository into public.
 
 Potential features to add in the future
